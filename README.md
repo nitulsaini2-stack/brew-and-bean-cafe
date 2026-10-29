@@ -1,5 +1,9 @@
 # Brew & Bean Café ☕
 
+## 🌐 Live Demo
+
+**Live Website:** https://brew-and-bean-cafe-eyzf.vercel.app/
+
 **Fresh Coffee, Happy Moments!**
 
 ## 📌 Project Overview
