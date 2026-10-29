@@ -1,0 +1,331 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us | Brew & Bean Café</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark cafe-navbar">
+      <div class="container">
+        <a class="navbar-brand cafe-brand" href="index.html">
+          Brew & Bean Café
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <header class="contact-hero text-center">
+      <div class="container">
+        <p class="hero-label">WE WOULD LOVE TO HEAR FROM YOU</p>
+
+        <h1 class="text-secondary">Get in Touch</h1>
+
+        <p>Have a question or want to place an order? Send us a message!</p>
+      </div>
+    </header>
+
+    <!-- Contact Form -->
+    <section class="contact-section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7">
+            <div class="card contact-card">
+              <div class="card-body p-4 p-md-5">
+                <h2 class="section-heading text-center mb-4">Contact Us</h2>
+
+                <form id="contactForm">
+                  <!-- Name -->
+                  <div class="mb-3">
+                    <label for="name" class="form-label"> Full Name </label>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your full name"
+                      required
+                    />
+                  </div>
+
+                  <!-- Email -->
+                  <div class="mb-3">
+                    <label for="email" class="form-label">
+                      Email Address
+                    </label>
+
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+
+                  <!-- Phone -->
+                  <div class="mb-3">
+                    <label for="phone" class="form-label"> Phone Number </label>
+
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      placeholder="Enter your phone number"
+                      required
+                    />
+                  </div>
+
+                  <!-- Service Dropdown -->
+                  <div class="mb-3">
+                    <label for="service" class="form-label">
+                      Select a Product
+                    </label>
+
+                    <select
+                      class="form-select"
+                      id="service"
+                      name="service"
+                      required
+                    >
+                      <option value="" selected disabled>
+                        Choose a product
+                      </option>
+
+                      <option value="Classic Cappuccino">
+                        Classic Cappuccino
+                      </option>
+
+                      <option value="Iced Latte">Iced Latte</option>
+
+                      <option value="Chocolate Cake">Chocolate Cake</option>
+
+                      <option value="Butter Croissant">Butter Croissant</option>
+
+                      <option value="Grilled Sandwich">Grilled Sandwich</option>
+
+                      <option value="Masala Chai">Masala Chai</option>
+                    </select>
+                  </div>
+
+                  <!-- Message -->
+                  <div class="mb-3">
+                    <label for="message" class="form-label">
+                      Your Message
+                    </label>
+
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      placeholder="Write your message here..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <!-- Checkbox -->
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="agreement"
+                      required
+                    />
+
+                    <label class="form-check-label" for="agreement">
+                      I agree to be contacted regarding my inquiry.
+                    </label>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <button
+                    type="submit"
+                    class="btn cafe-button w-100 text-black"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thank You Modal -->
+    <div
+      class="modal fade"
+      id="thankYouModal"
+      tabindex="-1"
+      aria-labelledby="thankYouModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body text-center">
+            <div class="thank-you-icon">☕</div>
+
+            <h4>Message Received!</h4>
+
+            <p>
+              Thank you for contacting Brew & Bean Café. We appreciate your
+              interest!
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn cafe-button"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="cafe-footer">
+      <div class="container">
+        <div class="row g-4 py-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <h3 class="footer-brand">Brew & Bean Café</h3>
+
+            <p class="footer-text">Fresh Coffee, Happy Moments!</p>
+
+            <p class="footer-text">
+              Your perfect place for delicious coffee, tasty treats, and
+              memorable moments.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <h4 class="footer-heading">Contact Us</h4>
+
+            <p class="footer-text">
+              <strong>Address:</strong> 123 Coffee Street, India
+            </p>
+
+            <p class="footer-text">
+              <strong>Phone:</strong>
+              <a href="tel:+911234567890">+91 12345 67890</a>
+            </p>
+
+            <p class="footer-text">
+              <strong>Email:</strong>
+              <a href="mailto:hello@brewandbean.example">
+                hello@brewandbean.example
+              </a>
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <h4 class="footer-heading">Opening Hours</h4>
+
+            <p class="footer-text">Monday – Friday: 9:00 AM – 9:00 PM</p>
+
+            <p class="footer-text">Saturday – Sunday: 10:00 AM – 10:00 PM</p>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="text-center py-3">
+          <p class="footer-copyright mb-0">
+            &copy; 2026 Brew & Bean Café. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Form JavaScript -->
+    <script>
+      const contactForm = document.getElementById("contactForm");
+
+      contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Get form data
+        const formData = new FormData(contactForm);
+
+        // Convert form data into an object
+        const data = Object.fromEntries(formData.entries());
+
+        // Display form data in console
+        console.log("Contact Form Data:", data);
+
+        // Show thank-you modal
+        const modalElement = document.getElementById("thankYouModal");
+        const thankYouModal = new bootstrap.Modal(modalElement);
+
+        thankYouModal.show();
+
+        // Reset the form
+        contactForm.reset();
+      });
+    </script>
+  </body>
+</html>

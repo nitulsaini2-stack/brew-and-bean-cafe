@@ -1,0 +1,472 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #38251d;
+    text-align: center;
+   
+}
+
+h1 {
+    font-size: 42px;
+    color: #6f4e37;
+}
+
+p {
+    font-size: 20px;
+}
+/* Navbar Styling */
+.cafe-navbar {
+    background-color: #38251d;
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.cafe-brand {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.cafe-navbar .nav-link {
+    color: white;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.cafe-navbar .nav-link:hover {
+    color: #e9bd8c;
+}
+
+.cafe-navbar .nav-link.active {
+    color: #e9bd8c;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #38251d, #936b4b);
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero-label {
+    color: #f1d1a9;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero-section h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 5vw, 60px);
+    font-weight: bold;
+    color: #cc9b9b;
+    margin: 20px 0;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.cafe-button {
+    background-color: #c08b5c;
+    color:white;
+    padding: 12px 28px;
+    border: 2px solid #c08b5c;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.cafe-button:hover {
+    background-color: transparent;
+    color: black;
+    border-color: white;
+}
+
+/* Mobile Responsive Hero Section */
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 65px 18px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+}
+/* Why Choose Us Section */
+.section-label {
+    color: #a66a3f;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section-heading {
+    color: #38251d;
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.feature-card {
+    border: 1px solid #eadccf;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(56, 37, 29, 0.12);
+}
+
+.feature-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.feature-card .card-title {
+    color: #38251d;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.feature-card .card-text {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* About Us Section */
+.about-section {
+    background-color: #fffaf5;
+}
+
+ .about-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(56, 37, 29, 0.12);
+    transition: transform 1s;
+} 
+.about-image:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.about-text {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+    .about-image {
+        height: 280px;
+    }
+
+    .section-heading {
+        font-size: 29px;
+    }
+}
+/* Customer Reviews Section */
+.reviews-section {
+    background-color: #ffffff;
+}
+
+.review-card {
+    border: 1px solid #eadccf;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(56, 37, 29, 0.12);
+}
+
+.review-stars {
+    color: #d99a32;
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.review-text {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.review-name {
+    color: #38251d;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-role {
+    color: #a66a3f;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Footer Section */
+.cafe-footer {
+    background-color: #38251d;
+    color: white;
+}
+
+.footer-brand {
+    color: #e9bd8c;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-heading {
+    color: #e9bd8c;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    color: #e0d5ce;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer-text a {
+    color: #e0d5ce;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+    color: #e9bd8c;
+}
+
+.footer-divider {
+    border-color: #8b7569;
+}
+
+.footer-copyright {
+    color: #e0d5ce;
+    font-size: 14px;
+}
+
+
+/* Services Page Hero */
+.services-hero {
+    background: linear-gradient(135deg, #38251d, #936b4b);
+    color: white;
+    padding: 75px 20px;
+}
+
+.services-hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(36px, 5vw, 55px);
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.services-intro {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Menu Section */
+.menu-section {
+    background-color: #fffaf5;
+}
+
+.menu-card {
+    border: 1px solid #eadccf;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(56, 37, 29, 0.12);
+}
+
+.menu-image-placeholder {
+    height: 170px;
+    background-color: #f3e6d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+}
+.menu-image-placeholder img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    background: none;
+    border-radius: 10px;
+}
+
+.menu-card .card-body {
+    padding: 25px;
+}
+
+.menu-card .card-title {
+    color: #38251d;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.menu-card .card-text {
+    color: #666;
+    line-height: 1.7;
+}
+
+.menu-price {
+    color: #a66a3f;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+
+/* Contact Page Hero */
+.contact-hero {
+    background: linear-gradient(135deg, #38251d, #936b4b);
+    color: white;
+    padding: 65px 20px;
+}
+
+.contact-hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(36px, 5vw, 52px);
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.contact-hero p:last-child {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Contact Form Section */
+.contact-section {
+    background-color: #fffaf5;
+}
+
+.contact-card {
+    border: 1px solid #eadccf;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(56, 37, 29, 0.08);
+}
+
+.contact-card .form-label {
+    float: left;
+    color: #38251d;
+    font-weight: 600;
+}
+
+.contact-card .form-control,
+.contact-card .form-select {
+    padding: 12px;
+    border-radius: 8px;
+    border-color: #ddcabb;
+}
+
+.contact-card .form-control:focus,
+.contact-card .form-select:focus {
+    border-color: #a66a3f;
+    box-shadow: 0 0 0 0.2rem rgba(166, 106, 63, 0.15);
+}
+
+.contact-card .form-check-input:checked {
+    background-color: #936b4b;
+    border-color: #2a589d99;
+}
+
+/* Thank You Modal */
+.modal-content {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #38251d;
+    color: white;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-body h4 {
+    color: #38251d;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.thank-you-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.modal-footer {
+    border-top: 1px solid #eadccf;
+}
+
+/* FAQ Accordion Section */
+.faq-section {
+    background-color: #fffaf5;
+}
+
+.faq-section .accordion-item {
+    border: 1px solid #eadccf;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-section .accordion-button {
+    color: #38251d;
+    font-weight: 600;
+    padding: 18px 20px;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    background-color: #f3e6d8;
+    color: #38251d;
+    box-shadow: none;
+}
+
+.faq-section .accordion-button:focus {
+    border-color: #c08b5c;
+    box-shadow: 0 0 0 0.2rem rgba(192, 139, 92, 0.15);
+}
+
+.faq-section .accordion-body {
+    color: #666;
+    line-height: 1.8;
+    background-color: #fff;
+}
